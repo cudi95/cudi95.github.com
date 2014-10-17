@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link href="3.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<title>Что? Где? Когда?</title>
+</head>
+<body>
+	<div class="countdown countdown-container container"
+	     data-border-color="rgba(255, 255, 255, .8)">  
+	    <div class="row">
+	    	<div class="col-md-4" style="margin-top:50px;">
+    	    	<div class="" style="margin-left: 20px;margin-top:70px;">
+					<input type="submit" class="btn btn-lg btn-success" id="reset" value="Минута" style="width:150px;" />
+				</div>
+    	    	<div class="" style="margin-left: 20px;margin-top:10px;">
+					<input type="submit" id="start" class="btn btn-lg btn-success" value="Старт" style="width:150px;" />
+				</div>
+    	    	<div class="" style="margin-left: 20px;margin-top:10px;">
+					<input type="submit" class="btn btn-lg btn-success" id="pause" value="Пауза" style="width:150px;" />
+				</div>
+    	    	<div class="" style="margin-left: 20px;margin-top:10px;">
+					<input type="submit" id="blic" class="btn btn-lg btn-danger" value="Блицопрос" style="width:150px;" />
+				</div>
+	    	</div>
+	        <div class="clock-item clock-seconds countdown-time-value col-md-5">
+	            <div class="wrap">
+	                <div class="inner">
+	                    <div id="canvas-seconds" class="clock-canvas"></div>
+	                    <div class="text">
+	                        <p class="val" id="val">0</p>
+	                        <p class="type-seconds type-time" id="secval">SECONDS</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/kinetic.js"></script>
+<script type="text/javascript" src="jquery.final-countdown.js"></script>
+<script type="text/javascript">
+	$('.countdown').final_countdown();
+</script>
+</body>
+</html>
